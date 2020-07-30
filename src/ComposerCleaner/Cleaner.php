@@ -48,7 +48,7 @@ class Cleaner
 			if (!$packageVendor->isDir()) {
 				continue;
 			}
-			foreach (new FilesystemIterator($packageVendor) as $packageName) {
+			foreach (new FilesystemIterator((string) $packageVendor) as $packageName) {
 				if (!$packageName->isDir()) {
 					continue;
 				}
