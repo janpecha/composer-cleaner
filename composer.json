@@ -11,11 +11,11 @@
 		}
 	],
 	"require": {
-		"php": ">=5.4.0",
+		"php": ">=5.6.0",
 		"composer-plugin-api": "^1.0 || ^2.0"
 	},
 	"require-dev": {
-		"nette/tester": "^1.7",
+		"nette/tester": "^2.0",
 		"composer/composer": "^1.10 || ^2.0"
 	},
 	"autoload": {
