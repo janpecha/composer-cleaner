@@ -45,8 +45,6 @@ jobs:
         -   stage: Static Analysis (informative)
 
 
-sudo: false
-
 cache:
     directories:
         - $HOME/.composer/cache
