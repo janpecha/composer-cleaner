@@ -1,5 +1,5 @@
 {
-	"name": "dg/composer-cleaner",
+	"name": "janpecha/composer-cleaner",
 	"type": "composer-plugin",
 	"description": "Victor The Cleaner: removes unnecessary files from vendor directory.",
 	"keywords": ["composer"],
@@ -21,6 +21,6 @@
 		"classmap": ["src/"]
 	},
 	"extra": {
-		"class": "DG\\ComposerCleaner\\Plugin"
+		"class": "JP\\ComposerCleaner\\Plugin"
 	}
 }

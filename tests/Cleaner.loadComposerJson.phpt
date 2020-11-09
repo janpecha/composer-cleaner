@@ -5,10 +5,10 @@ require __DIR__ . '/bootstrap.php';
 use Tester\Assert;
 
 $io = new IOInterface;
-$cleaner = new DG\ComposerCleaner\Cleaner($io, new Filesystem);
+$cleaner = new JP\ComposerCleaner\Cleaner($io, new Filesystem);
 
 Assert::equal((object) [
-	'name' => 'dg/composer-cleaner',
+	'name' => 'janpecha/composer-cleaner',
 	'type' => 'composer-plugin',
 ], $cleaner->loadComposerJson(__DIR__ . '/fixtures'));
 Assert::same([], $io->getLog());

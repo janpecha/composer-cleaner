@@ -5,7 +5,7 @@ require __DIR__ . '/bootstrap.php';
 use Tester\Assert;
 
 $io = new IOInterface;
-$cleaner = new DG\ComposerCleaner\Cleaner($io, new Filesystem);
+$cleaner = new JP\ComposerCleaner\Cleaner($io, new Filesystem);
 $vendorDir = __DIR__ . '/fixtures/vendor';
 
 $cleaner->clean($vendorDir, [

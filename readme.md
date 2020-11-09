@@ -1,16 +1,15 @@
 Victor The Cleaner for Composer
 ===============================
 
-[![Downloads this Month](https://img.shields.io/packagist/dm/dg/composer-cleaner.svg)](https://packagist.org/packages/dg/composer-cleaner)
-[![Build Status](https://travis-ci.org/dg/composer-cleaner.svg?branch=master)](https://travis-ci.org/dg/composer-cleaner)
-
 This tool removes unnecessary files and directories from Composer vendor directory.
+
+Forked from originally [dg/composer-cleaner](https://github.com/dg/composer-cleaner).
 
 Installation
 ------------
 
 ```
-composer require dg/composer-cleaner
+composer require janpecha/composer-cleaner
 ```
 
 Then simply use `composer update`.
@@ -34,5 +33,3 @@ You can also specify paths to be ignored (ie they will not be deleted) via `comp
 	}
 }
 ```
-
-If you like it, **[please make a donation now](https://nette.org/make-donation?to=composer-cleaner)**. Thank you!
