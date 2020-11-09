@@ -24,7 +24,7 @@ after_failure:
 jobs:
     include:
         -   name: Nette Code Checker
-            php: 7.1
+            php: 7.2
             install:
                 - travis_retry composer create-project nette/code-checker temp/code-checker ^3 --no-progress
             script:
@@ -32,7 +32,7 @@ jobs:
 
 
         -   stage: Static Analysis (informative)
-            php: 7.1
+            php: 7.2
             install:
                 # Install PHPStan
                 - travis_retry composer create-project phpstan/phpstan-shim temp/phpstan --no-progress
