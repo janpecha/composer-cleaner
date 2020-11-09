@@ -31,14 +31,6 @@ jobs:
                 - php temp/code-checker/code-checker -i tests/fixtures
 
 
-        -   name: Nette Coding Standard
-            php: 7.1
-            install:
-                - travis_retry composer create-project nette/coding-standard temp/coding-standard ^2 --no-progress
-            script:
-                - php temp/coding-standard/ecs check src tests --config temp/coding-standard/coding-standard-php56.yml
-
-
         -   stage: Static Analysis (informative)
             php: 7.1
             install:
