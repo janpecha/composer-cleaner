@@ -122,9 +122,9 @@ class Cleaner
 
 
 	/**
-	 * @param  string
-	 * @param  string[]
-	 * @param  string
+	 * @param  string $directory
+	 * @param  string[] $ignorePaths
+	 * @param  string $subdir
 	 * @return string[]|bool
 	 */
 	private function collectPaths($directory, $ignorePaths, $subdir = '')
@@ -164,8 +164,8 @@ class Cleaner
 
 
 	/**
-	 * @param  string
-	 * @param  string[]
+	 * @param  string $fileName
+	 * @param  string[] $patterns
 	 * @return bool
 	 */
 	public static function matchMask($fileName, array $patterns, $isDir = false)
