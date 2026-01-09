@@ -15,11 +15,11 @@
 	],
 	"require": {
 		"php": "7.4 - 8.5",
-		"composer-plugin-api": "^1.0 || ^2.0"
+		"composer-plugin-api": "^2.0"
 	},
 	"require-dev": {
 		"nette/tester": "^2.4",
-		"composer/composer": "^1.10 || ^2.0"
+		"composer/composer": "^2.0"
 	},
 	"autoload": {
 		"classmap": ["src/"]
