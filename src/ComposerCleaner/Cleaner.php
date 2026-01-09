@@ -69,7 +69,7 @@ class Cleaner
 	/**
 	 * @return void
 	 */
-	private function processPackage($packageDir, array $ignoreFiles = null)
+	private function processPackage($packageDir, ?array $ignoreFiles = null)
 	{
 		$data = $this->loadComposerJson($packageDir);
 		$type = isset($data->type) ? $data->type : null;
@@ -265,12 +265,12 @@ class Cleaner
 		$file = $dir . '/composer.json';
 		if (!is_file($file)) {
 			$this->io->writeError("Composer cleaner: File $file not found.", true, IOInterface::VERBOSE);
-			return;
+			return null;
 		}
 		$data = json_decode(file_get_contents($file));
 		if (!$data instanceof stdClass) {
 			$this->io->writeError("Composer cleaner: Invalid $file.");
-			return;
+			return null;
 		}
 		return $data;
 	}
