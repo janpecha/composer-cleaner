@@ -1,6 +1,7 @@
 Victor The Cleaner for Composer
 ===============================
 
+[![Build Status](https://github.com/janpecha/composer-cleaner/workflows/Build/badge.svg)](https://github.com/janpecha/composer-cleaner/actions)
 <a href="https://www.janpecha.cz/donate/"><img src="https://buymecoffee.intm.org/img/donate-banner.v1.svg" alt="Donate" height="100"></a>
 
 This tool removes unnecessary files and directories from Composer vendor directory.
